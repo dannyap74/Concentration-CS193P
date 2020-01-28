@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751DD6A623D3246D00D6A01A /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DD6A523D3246D00D6A01A /* Concentration.swift */; };
+		751DD6A823D8478000D6A01A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DD6A723D8478000D6A01A /* Card.swift */; };
+		7550956323DCF9F70087D29A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550956223DCF9F70087D29A /* Theme.swift */; };
 		75B890BB23BE524B00E65BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B890BA23BE524B00E65BB9 /* AppDelegate.swift */; };
 		75B890BD23BE524B00E65BB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B890BC23BE524B00E65BB9 /* SceneDelegate.swift */; };
 		75B890BF23BE524B00E65BB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B890BE23BE524B00E65BB9 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		751DD6A523D3246D00D6A01A /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		751DD6A723D8478000D6A01A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7550956223DCF9F70087D29A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		75B890B723BE524B00E65BB9 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B890BA23BE524B00E65BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B890BC23BE524B00E65BB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +62,12 @@
 		75B890B923BE524B00E65BB9 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				751DD6A723D8478000D6A01A /* Card.swift */,
+				751DD6A523D3246D00D6A01A /* Concentration.swift */,
 				75B890BA23BE524B00E65BB9 /* AppDelegate.swift */,
 				75B890BC23BE524B00E65BB9 /* SceneDelegate.swift */,
 				75B890BE23BE524B00E65BB9 /* ViewController.swift */,
+				7550956223DCF9F70087D29A /* Theme.swift */,
 				75B890C023BE524B00E65BB9 /* Main.storyboard */,
 				75B890C323BE524E00E65BB9 /* Assets.xcassets */,
 				75B890C523BE524E00E65BB9 /* LaunchScreen.storyboard */,
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B890BF23BE524B00E65BB9 /* ViewController.swift in Sources */,
+				751DD6A623D3246D00D6A01A /* Concentration.swift in Sources */,
+				751DD6A823D8478000D6A01A /* Card.swift in Sources */,
+				7550956323DCF9F70087D29A /* Theme.swift in Sources */,
 				75B890BB23BE524B00E65BB9 /* AppDelegate.swift in Sources */,
 				75B890BD23BE524B00E65BB9 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29QYQ2ZZ4L;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29QYQ2ZZ4L;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
