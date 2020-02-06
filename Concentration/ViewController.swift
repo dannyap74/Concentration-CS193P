@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     @IBAction func touchNewGame(_ sender: UIButton) {
         game = Concentration(numberOfPairOfCards: (cardButtons.count + 1)/2)
         themeIndex = Int(arc4random_uniform(UInt32(Themes.count)))
+        flipCount = 0
+        score = 0
+        
         updateViewFromModel()
     }
     
@@ -37,6 +40,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet var cardButtons: [UIButton]!
+    
+    // MARK: Handle touch card behaviour
     
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
@@ -83,23 +88,26 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: Chosing emoji
+    
     var emoji = [Int:String] ()
     
     func emoji(for card: Card) -> String {
         if emoji[card.identifier] == nil, emojiChoices.count > 0  {
             let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
             emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
-                
+        
         }
         
         return emoji[card.identifier] ?? "?"
     }
     
+    // TODO: add more themes
     
     var Themes: [Theme] = [
         Theme(name: "Halloween", emoji: ["👻", "🎃", "😱", "😵", "😈", "👺", "🤡", "🤖", "☠️", "👽"], backgroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), cardColor: #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1)),
         Theme(name: "Animals", emoji: ["🐶", "🐭", "🦊", "🦋", "🐢", "🐸", "🐵", "🐞", "🐿", "🐇", "🐯"], backgroundColor: #colorLiteral(red: 0.3098039329, green: 0.2039215714, blue: 0.03921568766, alpha: 1), cardColor: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
     ]
-        
+    
 }
 
